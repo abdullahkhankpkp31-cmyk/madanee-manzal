@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123d31">
+<title>مدنی منزل | Madanee Manzal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#123d31;--green2:#1b5945;--green3:#e8f0e9;--gold:#c39a50;--gold2:#ead8ad;--ink:#1f2c26;--muted:#718078;--paper:#fbf9f3;--white:#fff;--line:#e8e3d8;--shadow:0 12px 34px rgba(20,49,39,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Nastaliq Urdu",serif;line-height:2}button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.latin{font-family:Manrope,sans-serif;letter-spacing:.02em}.arabic{font-family:"Noto Naskh Arabic","Amiri",serif;line-height:2.1}.wrap{width:min(1200px,92%);margin:auto}
+.topline{height:5px;background:linear-gradient(90deg,var(--gold),#f2e2b8,var(--green2))}
+header{position:sticky;top:0;z-index:20;background:rgba(251,249,243,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--green);font-weight:700;font-size:23px;white-space:nowrap}.brandmark{width:46px;height:46px;border:1px solid var(--gold);border-radius:15px;display:grid;place-items:center;background:var(--green);color:#f4dfb2;font-size:24px}
+.brand small{display:block;font:600 9px Manrope,sans-serif;letter-spacing:2px;color:var(--gold);text-align:center;margin-top:-7px}
+nav{display:flex;align-items:center;gap:22px;font-size:14px}nav a{color:#46574e;transition:.2s}nav a:hover{color:var(--gold)}
+.nav-actions{display:flex;align-items:center;gap:10px}.btn{border:0;border-radius:12px;padding:10px 19px;background:var(--green);color:white;box-shadow:0 5px 14px #123d3122;transition:.2s}.btn:hover{transform:translateY(-2px);background:var(--green2)}.btn.outline{background:transparent;color:var(--green);border:1px solid var(--green)}.iconbtn{display:none;border:1px solid var(--line);background:white;border-radius:10px;padding:8px 12px;color:var(--green);font-size:20px}
+.hero{padding:58px 0 38px;background:radial-gradient(circle at 85% 15%,#e9dfc8 0,transparent 28%),linear-gradient(125deg,#10392e,#174c3b 65%,#0e3027);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;opacity:.10;background-image:repeating-linear-gradient(45deg,transparent 0 18px,#e5d3a6 19px 20px,transparent 21px 40px);mask-image:linear-gradient(90deg,transparent,#000)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:40px}.eyebrow{color:#e8d19c;font-size:13px;letter-spacing:.04em}.hero h1{font-size:clamp(36px,5vw,62px);line-height:1.6;margin:8px 0;color:#f4dfb2;font-weight:700}.hero p{font-size:17px;color:#e2e9e3;max-width:650px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.hero .btn{background:var(--gold);color:#1e2c23}.hero .btn.outline{border-color:#d9c18c;color:#fff;background:transparent}
+.hero-art{min-height:260px;border:1px solid #c39a5070;border-radius:48% 48% 18px 18px;background:linear-gradient(180deg,#ffffff12,#ffffff03);display:grid;place-items:center;position:relative}.arch{width:190px;height:220px;border:2px solid #d2b476;border-bottom:0;border-radius:100px 100px 0 0;display:grid;place-items:center;color:#e9d29e;font-size:76px;position:relative}.arch:after{content:"";position:absolute;inset:10px;border:1px solid #d2b47677;border-bottom:0;border-radius:100px 100px 0 0}.hero-art .stars{position:absolute;color:#d6b977;font-size:22px}
+.section{padding:55px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:25px}.section-head h2{font-size:29px;color:var(--green);margin:0}.section-head p{margin:0;color:var(--muted);font-size:13px}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.feature{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 20px;min-height:176px;box-shadow:0 3px 14px #193b2b08;transition:.25s;position:relative;overflow:hidden;text-align:right}.feature:before{content:"";position:absolute;top:0;right:0;width:4px;height:0;background:var(--gold);transition:.25s}.feature:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#d8c69e}.feature:hover:before{height:100%}.ficon{width:49px;height:49px;border-radius:15px;background:var(--green3);color:var(--green);display:grid;place-items:center;font-size:25px;margin-bottom:12px}.feature h3{font-size:18px;color:var(--green);margin:0 0 3px}.feature p{font-size:12px;color:var(--muted);margin:0;line-height:1.9}.feature .arrow{position:absolute;left:18px;bottom:17px;color:var(--gold);font-size:20px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 4px 18px #173a2b08}.panel h3{margin:0 0 8px;color:var(--green);font-size:22px}.panel p{color:var(--muted);font-size:14px;margin:0 0 15px}.prayer-list{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.prayer{background:#f7f5ee;border:1px solid var(--line);padding:10px;border-radius:12px;text-align:center}.prayer b{display:block;color:var(--green);font-size:15px}.prayer span{font:600 12px Manrope;color:var(--muted);direction:ltr;display:block}
+.whatsapp{background:linear-gradient(110deg,#eaf4e9,#f9f7ee);border:1px solid #d7e5d6;display:flex;align-items:center;justify-content:space-between;gap:20px}.wa-icon{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#1c9b5d;color:white;font:800 30px Manrope;flex-shrink:0}.wa-copy{flex:1}.wa-copy h3{margin:0;color:#17603d}.wa-copy p{margin:0;color:#65766b;font-size:13px}
+.book-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.book{border:1px solid var(--line);border-radius:15px;padding:18px;background:white;display:flex;gap:15px;align-items:center}.bookcover{width:62px;height:82px;border-radius:7px;background:linear-gradient(145deg,#174b39,#0b2c23);color:#ead6a7;display:grid;place-items:center;font-size:24px;box-shadow:4px 5px 0 #c9b88f}.book h4{margin:0;color:var(--green);font-size:16px}.book small{color:var(--muted)}
+.ad-slot{border:1px dashed #c9c1ae;background:#f5f2e9;border-radius:13px;padding:10px 16px;text-align:center;color:#8a877e;font:11px Manrope;max-width:340px;margin:24px auto}.ad-slot strong{display:block;font-size:10px;color:#9a8b6d;margin-bottom:3px}
+.cta{background:var(--green);color:white;border-radius:22px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta h2{margin:0;color:#f0d9a5;font-size:26px}.cta p{margin:3px 0 0;color:#d4e0d7;font-size:13px}
+footer{background:#0d2d24;color:#d8e2db;padding:40px 0 20px;margin-top:45px}.footergrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}.footergrid h4{color:#e7cf98;margin:0 0 10px}.footergrid p,.footergrid a{font-size:13px;color:#c2d0c6}.footerlinks{display:grid;gap:5px}.copyright{border-top:1px solid #ffffff20;margin-top:25px;padding-top:15px;text-align:center;color:#a9b8ad;font:11px Manrope}
+.modal{display:none;position:fixed;inset:0;background:#071b15b8;z-index:50;padding:20px;overflow:auto}.modal.show{display:grid;place-items:center}.modalbox{background:var(--paper);width:min(760px,100%);max-height:90vh;overflow:auto;border-radius:20px;padding:25px;position:relative;box-shadow:0 25px 70px #0004}.modalclose{position:absolute;left:18px;top:12px;border:0;background:#e9eee8;border-radius:50%;width:35px;height:35px;font-size:20px;color:var(--green)}.modalbox h2{color:var(--green);margin:0 0 12px}.modalbox p{color:#58675f}.field{display:grid;gap:5px;margin:12px 0}.field label{font-size:14px;color:var(--green)}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:white;direction:auto}.field textarea{min-height:90px}
+.toast{position:fixed;bottom:20px;left:20px;background:#123d31;color:#fff;padding:10px 17px;border-radius:10px;z-index:70;display:none;font-size:13px}.toast.show{display:block}
+@media(max-width:950px){nav{display:none;position:absolute;top:82px;right:0;left:0;background:var(--paper);padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:10px}nav.open{display:flex}.iconbtn{display:block}.nav-actions .btn{display:none}.hero-grid{grid-template-columns:1fr}.hero-art{display:none}.feature-grid{grid-template-columns:repeat(2,1fr)}.book-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.nav{height:70px}.brand{font-size:19px}.brandmark{width:40px;height:40px}.hero{padding:38px 0 30px}.hero h1{font-size:38px}.hero p{font-size:14px}.section{padding:38px 0}.section-head{display:block}.section-head h2{font-size:24px}.feature-grid{gap:10px}.feature{padding:15px;min-height:160px}.feature h3{font-size:15px}.feature p{font-size:11px}.ficon{width:42px;height:42px}.split{grid-template-columns:1fr}.prayer-list{grid-template-columns:repeat(2,1fr)}.book-grid{grid-template-columns:1fr}.whatsapp{align-items:flex-start;flex-wrap:wrap}.cta{display:block}.cta .btn{margin-top:15px}.footergrid{grid-template-columns:1fr}.ad-slot{max-width:100%}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="brandmark">۞</span><span>مدنی منزل<small>MADANEE MANZAL</small></span></a>
+  <nav id="nav">
+   <a href="#home">ہوم</a><a href="#quran">قرآن مجید</a><a href="#books">اسلامی کتب</a><a href="#prayer">اوقات نماز</a><a href="#hadith">احادیث</a><a href="#assistant">اسلامی معاون</a>
+  </nav>
+  <div class="nav-actions"><button class="btn" onclick="openSection('quran')">مطالعہ شروع کریں</button><button class="iconbtn" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menu">☰</button></div>
+ </div>
+</header>
+
+<main id="home">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">آپ کا اسلامی ڈیجیٹل ساتھی</div>
+   <h1>مدنی منزل</h1>
+   <p>قرآن و سنت کی روشنی میں علم، عبادت اور روزمرہ اسلامی رہنمائی کے لیے ایک خوبصورت ڈیجیٹل پلیٹ فارم۔</p>
+   <div class="hero-buttons"><button class="btn" onclick="openSection('quran')">قرآن مجید پڑھیں</button><button class="btn outline" onclick="openSection('assistant')">اسلامی سوال پوچھیں</button></div>
+  </div>
+  <div class="hero-art"><span class="stars" style="top:25px;right:35px">✦</span><span class="stars" style="bottom:35px;left:30px">✧</span><div class="arch">۞</div></div>
+ </div>
+</section>
+
+<section class="section wrap">
+ <div class="section-head"><div><h2>مدنی منزل کے شعبہ جات</h2><p>اپنی ضرورت کے مطابق کسی بھی شعبے کا انتخاب کریں</p></div><span class="latin" style="color:var(--gold);font-size:11px">EXPLORE • LEARN • PRACTICE</span></div>
+ <div class="feature-grid">
+  <a class="feature" href="#quran" onclick="showInfo('quran')"><div class="ficon">۞</div><h3>قرآن مجید مع ترجمہ و تفسیر</h3><p>آیات، اردو ترجمہ اور منتخب تفاسیر</p><span class="arrow">←</span></a>
+  <a class="feature" href="#quran" onclick="showInfo('arabic')"><div class="ficon">﷽</div><h3>صرف قرآن مجید</h3><p>عربی عبارت، سورت اور پارہ کی فہرست</p><span class="arrow">←</span></a>
+  <a class="feature" href="#books"><div class="ficon">▤</div><h3>اسلامی کتب</h3><p>موضوعات کے لحاظ سے ڈیجیٹل کتب خانہ</p><span class="arrow">←</span></a>
+  <a class="feature" href="#prayer"><div class="ficon">◷</div><h3>اوقاتِ نماز</h3><p>شہر منتخب کرکے نمازوں کا شیڈول دیکھیں</p><span class="arrow">←</span></a>
+  <a class="feature" href="#assistant"><div class="ficon">✧</div><h3>اسلامی AI چیٹ بوٹ</h3><p>اسلامی سوالات کے لیے حوالہ جاتی معاون</p><span class="arrow">←</span></a>
+  <a class="feature" href="#hadith"><div class="ficon">۩</div><h3>احادیث مبارکہ</h3><p>حدیث، ترجمہ اور کتاب کا حوالہ</p><span class="arrow">←</span></a>
+  <a class="feature" href="#duas"><div class="ficon">♧</div><h3>دعائیں اور اذکار</h3><p>روزمرہ کی مسنون دعائیں اور اذکار</p><span class="arrow">←</span></a>
+  <a class="feature" href="#calendar"><div class="ficon">▦</div><h3>اسلامی کیلنڈر</h3><p>ہجری تاریخ اور اہم اسلامی ایام</p><span class="arrow">←</span></a>
+  <a class="feature" href="#questions"><div class="ficon">؟</div><h3>اسلامی سوالات و جوابات</h3><p>منتخب سوالات، جوابات اور مراجع</p><span class="arrow">←</span></a>
+  <a class="feature" href="#whatsapp"><div class="ficon">◉</div><h3>واٹس ایپ چینل</h3><p>مدنی منزل کی تازہ دینی معلومات</p><span class="arrow">←</span></a>
+  <a class="feature" href="#admin" onclick="openAdmin()"><div class="ficon">⚙</div><h3>ایڈمن سیٹنگز</h3><p>چینل لنک اور بنیادی ویب سائٹ سیٹنگز</p><span class="arrow">←</span></a>
+  <a class="feature" href="#saved"><div class="ficon">♡</div><h3>محفوظ شدہ مواد</h3><p>پسندیدہ مواد اور مطالعے کے نشانات</p><span class="arrow">←</span></a>
+ </div>
+ <div class="ad-slot"><strong>ADVERTISEMENT</strong>اشتہار کے لیے مختص جگہ — یہ حصہ اصل اشتہاری نیٹ ورک منسلک ہونے پر استعمال ہوگا</div>
+</section>
+
+<section class="section wrap" id="quran">
+ <div class="section-head"><div><h2>قرآن مجید و تفاسیر</h2><p>قرآنی مطالعے کے لیے الگ اور واضح حصے</p></div></div>
+ <div class="split">
+  <div class="panel"><h3>قرآن مع ترجمہ و تفسیر</h3><p>سورت اور آیت منتخب کرکے ترجمہ اور دستیاب تفاسیر کا مطالعہ کریں۔</p>
+   <div class="field"><label>تفسیر منتخب کریں</label><select id="tafseer"><option>معارف القرآن</option><option>تفسیر عثمانی</option><option>تفسیر ابن کثیر</option></select></div>
+   <div class="field"><label>سورت منتخب کریں</label><select><option>الفاتحہ</option><option>البقرۃ</option><option>آل عمران</option></select></div>
+   <p class="arabic" style="font-size:24px;color:var(--green);text-align:center">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+   <p>یہ ڈیمو انٹرفیس ہے۔ اصل قرآنی متن، ترجمہ اور تفسیر مستند ڈیٹا فائلوں سے منسلک کرنے کے بعد دکھائے جائیں گے۔</p>
+  </div>
+  <div class="panel"><h3>صرف قرآن مجید</h3><p>عربی عبارت کے لیے مخصوص مطالعہ صفحہ۔</p><p class="arabic" style="font-size:27px;text-align:center;color:var(--green)">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۞ الرَّحْمَٰنِ الرَّحِيمِ</p><p>قرآنی رسم الخط کو مستند عثمانی متن اور مناسب قرآنی فونٹ سے جوڑنا ضروری ہے۔</p></div>
+ </div>
+</section>
+
+<section class="section wrap" id="books">
+ <div class="section-head"><div><h2>اسلامی کتب خانہ</h2><p>کتابوں کے لیے ایک منظم ڈیجیٹل لائبریری</p></div></div>
+ <div class="book-grid">
+  <div class="book"><div class="bookcover">۞</div><div><h4>معارف القرآن</h4><small>مفتی محمد شفیعؒ</small></div></div>
+  <div class="book"><div class="bookcover">۞</div><div><h4>تفسیر عثمانی</h4><small>مولانا شبیر احمد عثمانیؒ</small></div></div>
+  <div class="book"><div class="bookcover">۞</div><div><h4>تفسیر ابن کثیر</h4><small>امام ابن کثیرؒ</small></div></div>
+ </div>
+ <p style="font-size:12px;color:var(--muted);margin-top:12px">یہ کتابی کارڈز نمونہ ہیں؛ مکمل متن صرف مجاز اور تصدیق شدہ فائلیں اپ لوڈ کرنے کے بعد دستیاب ہوگا۔</p>
+</section>
+
+<section class="section wrap" id="prayer">
+ <div class="section-head"><div><h2>اوقاتِ نماز</h2><p>نماز کے اوقات کے لیے شہر منتخب کریں</p></div></div>
+ <div class="panel">
+  <div class="field"><label>شہر</label><input id="city" placeholder="مثلاً: اسلام آباد، پاکستان"></div>
+  <div class="prayer-list">
+   <div class="prayer"><b>فجر</b><span>API درکار</span></div><div class="prayer"><b>طلوعِ آفتاب</b><span>API درکار</span></div><div class="prayer"><b>ظہر</b><span>API درکار</span></div><div class="prayer"><b>عصر</b><span>API درکار</span></div><div class="prayer"><b>مغرب</b><span>API درکار</span></div><div class="prayer"><b>عشاء</b><span>API درکار</span></div>
+  </div><p style="font-size:12px;margin-top:12px">درست اوقات کے لیے مقام، فقہی طریقۂ عصر اور معتبر نماز ٹائم API منسلک کرنا ضروری ہے۔ یہاں فرضی اوقات نہیں دکھائے گئے۔</p>
+ </div>
+</section>
+
+<section class="section wrap" id="assistant">
+ <div class="section-head"><div><h2>مدنی منزل اسلامی معاون</h2><p>اسلامی سوالات کے لیے حوالہ جاتی AI معاون</p></div></div>
+ <div class="panel"><h3>اپنا اسلامی سوال لکھیں</h3><p>حتمی چیٹ بوٹ کے لیے Gemini API، مستند اسلامی ڈیٹا اور حوالہ جات کا نظام منسلک کیا جائے گا۔</p>
+  <div class="field"><textarea id="question" placeholder="اپنا سوال یہاں لکھیں..."></textarea></div>
+  <button class="btn" onclick="demoQuestion()">سوال جمع کریں</button><div id="answer" style="margin-top:15px;color:var(--green)"></div>
+ </div>
+</section>
+
+<section class="section wrap" id="hadith">
+ <div class="panel"><h3>احادیث مبارکہ</h3><p>صحیح بخاری، صحیح مسلم اور دیگر کتب حدیث کے مستند متن، تراجم اور حوالہ جات کے لیے ڈیٹا سورس منسلک کیا جائے گا۔</p></div>
+</section>
+<section class="section wrap" id="duas"><div class="panel"><h3>دعائیں اور اذکار</h3><p>صبح و شام کے اذکار، مسنون دعائیں اور حوالہ جات۔ مستند مواد اپ لوڈ ہونے کے بعد شائع ہوگا۔</p></div></section>
+<section class="section wrap" id="calendar"><div class="panel"><h3>اسلامی کیلنڈر</h3><p>ہجری تاریخ اور اسلامی ایام کے لیے مستند ہجری کیلنڈر API منسلک کیا جائے گا۔</p></div></section>
+<section class="section wrap" id="questions"><div class="panel"><h3>اسلامی سوالات و جوابات</h3><p>منتظم کے منظور شدہ سوالات اور حوالہ جاتی جوابات یہاں شائع کیے جا سکیں گے۔</p></div></section>
+
+<section class="section wrap" id="whatsapp">
+ <div class="panel whatsapp"><div class="wa-icon">◉</div><div class="wa-copy"><h3>مدنی منزل واٹس ایپ چینل</h3><p>روزانہ اسلامی سوالات، جوابات اور دینی معلومات کے لیے ہمارا چینل جوائن کریں۔</p></div><a class="btn" id="waJoin" href="#" target="_blank" rel="noopener">چینل جوائن کریں</a></div>
+</section>
+<section class="section wrap"><div class="cta"><div><h2>علم حاصل کریں، عمل کی طرف بڑھیں</h2><p>مدنی منزل — آپ کا اسلامی ڈیجیٹل ساتھی</p></div><button class="btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">اوپر جائیں ↑</button></div></section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="footergrid">
+   <div><h4>مدنی منزل</h4><p>قرآن و سنت کی روشنی میں زندگی گزارنے کا ایک خوبصورت ڈیجیٹل اسلامی پلیٹ فارم۔</p></div>
+   <div><h4>اہم روابط</h4><div class="footerlinks"><a href="#quran">قرآن و تفسیر</a><a href="#books">اسلامی کتب</a><a href="#prayer">اوقات نماز</a><a href="#assistant">اسلامی معاون</a></div></div>
+   <div><h4>رابطہ و انتظام</h4><div class="footerlinks"><a href="#whatsapp">واٹس ایپ چینل</a><a href="#admin" onclick="openAdmin()">ایڈمن سیٹنگز</a></div></div>
+  </div>
+  <div class="copyright">© <span id="year"></span> MADANEE MANZAL • All rights reserved</div>
+ </div>
+</footer>
+
+<div class="modal" id="adminModal"><div class="modalbox"><button class="modalclose" onclick="closeAdmin()">×</button><h2>بنیادی ایڈمن سیٹنگز</h2><p>یہ ڈیمو سیٹنگز اسی براؤزر میں محفوظ ہوں گی۔ حقیقی محفوظ ایڈمن پینل کے لیے لاگ اِن اور سرور درکار ہوگا۔</p>
+ <div class="field"><label>واٹس ایپ چینل کا لنک</label><input id="waUrl" type="url" placeholder="https://whatsapp.com/channel/..."></div>
+ <div class="field"><label>چینل کا نام</label><input id="waName" placeholder="مدنی منزل واٹس ایپ چینل"></div>
+ <button class="btn" onclick="saveAdmin()">سیٹنگز محفوظ کریں</button>
+</div></div>
+<div class="toast" id="toast">سیٹنگ محفوظ ہوگئی</div>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function openAdmin(){document.getElementById('adminModal').classList.add('show');document.getElementById('waUrl').value=localStorage.getItem('mm_wa_url')||'';document.getElementById('waName').value=localStorage.getItem('mm_wa_name')||'مدنی منزل واٹس ایپ چینل'}
+function closeAdmin(){document.getElementById('adminModal').classList.remove('show')}
+function saveAdmin(){const u=document.getElementById('waUrl').value.trim();if(u&&!/^https:\/\/(chat\.whatsapp\.com|whatsapp\.com)\//i.test(u)){alert('براہِ کرم درست WhatsApp Channel URL درج کریں۔');return}localStorage.setItem('mm_wa_url',u);localStorage.setItem('mm_wa_name',document.getElementById('waName').value.trim());applyWhatsApp();closeAdmin();toast('واٹس ایپ لنک محفوظ ہوگیا')}
+function applyWhatsApp(){const u=localStorage.getItem('mm_wa_url');const a=document.getElementById('waJoin');if(u){a.href=u;a.target='_blank'}else{a.href='#';a.onclick=(e)=>{e.preventDefault();openAdmin();toast('پہلے ایڈمن سیٹنگز میں اپنا چینل لنک شامل کریں')}}}
+function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),2500)}
+function demoQuestion(){const q=document.getElementById('question').value.trim();const a=document.getElementById('answer');if(!q){a.textContent='براہِ کرم پہلے اپنا سوال لکھیں۔';return}a.textContent='یہ صرف فرنٹ اینڈ ڈیمو ہے۔ حقیقی دینی جواب دینے کے لیے محفوظ Gemini API، مستند اسلامی مصادر اور حوالہ جاتی نظام منسلک کرنا ضروری ہے۔';}
+function openSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});document.getElementById('nav').classList.remove('open')}
+function showInfo(type){if(type==='arabic')setTimeout(()=>toast('قرآنی مستند ڈیٹا منسلک ہونے کے بعد مکمل متن دستیاب ہوگا'),200)}
+applyWhatsApp();
+</script>
+</body>
+</html>
