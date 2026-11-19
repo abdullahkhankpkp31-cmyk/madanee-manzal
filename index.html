@@ -164,5 +164,28 @@ function openSection(id){document.getElementById(id).scrollIntoView({behavior:'s
 function showInfo(type){if(type==='arabic')setTimeout(()=>toast('قرآنی مستند ڈیٹا منسلک ہونے کے بعد مکمل متن دستیاب ہوگا'),200)}
 applyWhatsApp();
 </script>
+ <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBRRW9g7SYz0x_2Jw7nGRDi6ILsCvyOTdE",
+    authDomain: "madanee-manzal.firebaseapp.com",
+    projectId: "madanee-manzal",
+    storageBucket: "madanee-manzal.firebasestorage.app",
+    messagingSenderId: "628930522311",
+    appId: "1:628930522311:web:e72a62a2d1baf31c3be2e2",
+    measurementId: "G-WSD43L6TKP"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+ </script>
 </body>
 </html>
